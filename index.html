@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Triangle Tracker</title>
+</head>
+<body>
+  <div class="container">
+    <div class="col-md-3">
+      <h3>See what kind of triangle you have!</h3>
+      <form id="triangle">
+        <div class="form-group">
+          <label for="a">side A:</label>
+          <input id="a" type="text" name="a" pattern="\d*" autofocus>
+          <br />
+
+          <label for="b">side B:</label>
+          <input id="b" type="text" name="b" pattern="\d*">
+          <br />
+
+          <label for="c">side C:</label>
+          <input id="c" type="text" name="c"pattern="\d*">
+          <br />
+          <br />
+
+          <button type="submit" class="btn-info">Go!</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-3">
+      <h3>Equilateral</h3>
+      <ul id="equilateral">
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <h3>Isosceles</h3>
+      <ul id="isosceles">
+      </ul>
+    </div>
+
+    <div class="col-md-3">
+      <h3>Scalene</h3>
+      <ul id="scalene">
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
